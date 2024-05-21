@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Worklog:
 
-Things you may want to cover:
+### 13:30 - 14:30:
 
-* Ruby version
+- Install RbEnv
+- Rails new
+- Connect github repo
+- Generate all the models
+- Test for all models (install rspec)
+- Seeds and feature test to check the whole thing works end to end.
 
-* System dependencies
+# Getting started
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `bundle install`
+- `rake db:migrate`
+- `rails s`
