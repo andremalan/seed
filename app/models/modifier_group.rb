@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ModifierGroup < ApplicationRecord
   has_many :item_modifier_groups
   has_many :items, through: :item_modifier_groups

@@ -2,7 +2,7 @@
 
 ## Worklog:
 
-### 13:30 - 14:30:
+### 21: 13:30 - 14:30:
 
 - Install RbEnv
 - Rails new
@@ -11,17 +11,23 @@
 - Test for all models (install rspec)
 - Seeds and feature test to check the whole thing works end to end.
 
-### 14:30 - 15:00:
+### 21: 14:30 - 15:00:
 
 - Add GraphQL
 - Add and test basic types.
 
+### 22: 10 - 11:30:
+
+- Add graphQL mutations.
+- Add Rspec tests for the mutations.
+
 ## TODO:
 
-- Add mutations
+- Add more basic fields to query?
 - Deploy
 - Add playwright test to check graphql is working
-- CI
+- CI?
+- Some kind of auth?
 
 # Getting started
 

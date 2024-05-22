@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Types
   class MenuType < Types::BaseObject
     field :identifier, ID, null: false

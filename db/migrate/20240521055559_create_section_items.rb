@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateSectionItems < ActiveRecord::Migration[7.1]
   def change
     create_table :section_items do |t|

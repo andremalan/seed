@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateModifierGroups < ActiveRecord::Migration[7.1]
   def change
     create_table :modifier_groups do |t|

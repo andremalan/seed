@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateModifiers < ActiveRecord::Migration[7.1]
   def change
     create_table :modifiers do |t|

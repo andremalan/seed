@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Item < ApplicationRecord
   self.inheritance_column = nil
   has_many :section_items
