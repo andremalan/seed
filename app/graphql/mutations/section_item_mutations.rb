@@ -7,7 +7,7 @@ module Mutations
       argument :item_id, ID, required: true
       argument :display_order, Integer, required: true
 
-      field :section, Types::SectionType, null: false
+      field :section, Types::SectionType, null: true
 
       def resolve(section_id:, item_id:, display_order:)
         section_item = SectionItem.create!(
@@ -23,7 +23,7 @@ module Mutations
       argument :section_id, ID, required: true
       argument :item_id, ID, required: true
 
-      field :section, Types::SectionType, null: false
+      field :section, Types::SectionType, null: true
 
       def resolve(section_id:, item_id:)
         section_item = SectionItem.find_by!(section_id:, item_id:)

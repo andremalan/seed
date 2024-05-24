@@ -4,6 +4,7 @@ module Types
   class ModifierType < Types::BaseObject
     field :identifier, ID, null: false
     field :item_id, Integer, null: false
+    field :item, Types::ItemType, null: false
     field :modifier_group_id, Integer, null: false
     field :display_order, Integer, null: false
     field :default_quantity, Integer, null: false

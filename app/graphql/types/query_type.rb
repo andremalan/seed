@@ -30,12 +30,46 @@ module Types
       argument :identifier, ID, required: true
     end
 
+    field :sections, [Types::SectionType], null: false do
+      description 'Retrieve all sections'
+    end
+
+    field :section, Types::SectionType, null: false do
+      description 'Retrieve a section by identifier'
+      argument :identifier, ID, required: true
+    end
+
+    field :items, [Types::ItemType], null: false do
+      description 'Retrieve all items'
+    end
+
+    field :item, Types::ItemType, null: false do
+      description 'Retrieve an item by identifier'
+      argument :identifier, ID, required: true
+    end
+
     def menus
       Menu.all
     end
 
     def menu(identifier:)
       Menu.find(identifier)
+    end
+
+    def sections
+      Section.all
+    end
+
+    def section(identifier:)
+      Section.find(identifier)
+    end
+
+    def items
+      Item.all
+    end
+
+    def item(identifier:)
+      Item.find(identifier)
     end
   end
 end

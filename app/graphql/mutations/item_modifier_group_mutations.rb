@@ -6,7 +6,7 @@ module Mutations
       argument :item_id, ID, required: true
       argument :modifier_group_id, ID, required: true
 
-      field :item, Types::ItemType, null: false
+      field :item, Types::ItemType, null: true
 
       def resolve(item_id:, modifier_group_id:)
         item_modifier_group = ItemModifierGroup.create!(
@@ -21,7 +21,7 @@ module Mutations
       argument :item_id, ID, required: true
       argument :modifier_group_id, ID, required: true
 
-      field :item, Types::ItemType, null: false
+      field :item, Types::ItemType, null: true
 
       def resolve(item_id:, modifier_group_id:)
         item_modifier_group = ItemModifierGroup.find_by!(item_id:, modifier_group_id:)

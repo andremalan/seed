@@ -2,7 +2,7 @@
 
 ## Worklog:
 
-### 21: 13:30 - 14:30:
+### May 21: 13:30 - 14:30:
 
 - Install RbEnv
 - Rails new
@@ -11,28 +11,25 @@
 - Test for all models (install rspec)
 - Seeds and feature test to check the whole thing works end to end.
 
-### 21: 14:30 - 15:00:
+### May 21: 14:30 - 15:00:
 
 - Add GraphQL
 - Add and test basic types.
 
-### 22: 10 - 11:30:
+### May 22: 10 - 11:30:
 
 - Add graphQL mutations.
 - Add Rspec tests for the mutations.
 
-### 24: 1:45 - 2:30:
+### May 24: 1:45 - 2:30:
 
 - Add Postgres
 - Deploy to fly.io
 
-## TODO:
+### May 24: 3:00: 3:45:
 
-- Add more basic fields to query?
-- Deploy
-- Add playwright test to check graphql is working
-- CI?
-- Some kind of auth?
+- Update seeds
+- CI
 
 # Getting started
 

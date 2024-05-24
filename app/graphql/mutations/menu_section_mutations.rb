@@ -7,7 +7,7 @@ module Mutations
       argument :section_id, ID, required: true
       argument :display_order, Integer, required: true
 
-      field :menu, Types::MenuType, null: false
+      field :menu, Types::MenuType, null: true
 
       def resolve(menu_id:, section_id:, display_order:)
         menu_section = MenuSection.create!(
@@ -23,7 +23,7 @@ module Mutations
       argument :menu_id, ID, required: true
       argument :section_id, ID, required: true
 
-      field :menu, Types::MenuType, null: false
+      field :menu, Types::MenuType, null: true
 
       def resolve(menu_id:, section_id:)
         menu_section = MenuSection.find_by!(menu_id:, section_id:)

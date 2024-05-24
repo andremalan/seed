@@ -34,9 +34,12 @@ item2 = Item.create!(label: 'Pepperoni Pizza',
 item3 = Item.create!(label: 'Coke', description: 'Refreshing Coca-Cola beverage.', price: 200, type: 'Product')
 item4 = Item.create!(label: 'Sprite', description: 'Refreshing Sprite beverage.', price: 200, type: 'Product')
 
+item5 = Item.create!(label: 'Potato party',
+                     description: 'Pizza with all the things, including fries.', price: 1700, type: 'Product')
 # Create SectionItems
 SectionItem.create!(section: section1, item: item1, display_order: 1)
 SectionItem.create!(section: section1, item: item2, display_order: 2)
+SectionItem.create!(section: section2, item: item5, display_order: 1)
 SectionItem.create!(section: section3, item: item3, display_order: 1)
 SectionItem.create!(section: section3, item: item4, display_order: 2)
 
