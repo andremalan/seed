@@ -11,7 +11,7 @@ gem 'rails', '~> 7.1.3', '>= 7.1.3.3'
 gem 'sprockets-rails'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '>= 5.0'
@@ -46,12 +46,14 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+gem 'graphiql-rails'
 gem 'graphql'
 gem 'rubocop', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
+
   gem 'factory_bot_rails'
   gem 'pry'
   gem 'pry-byebug'
@@ -59,6 +61,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'dockerfile-rails', '>= 1.6'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
@@ -75,4 +78,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
 end
-gem 'graphiql-rails', group: :development
+
+gem "pg", "~> 1.5"

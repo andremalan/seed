@@ -21,6 +21,11 @@
 - Add graphQL mutations.
 - Add Rspec tests for the mutations.
 
+### 24: 1:45 - 2:30:
+
+- Add Postgres
+- Deploy to fly.io
+
 ## TODO:
 
 - Add more basic fields to query?
