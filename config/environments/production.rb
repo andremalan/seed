@@ -96,4 +96,12 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
+  config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins 'https://grow-three.vercel.app'
+
+      resource '*', headers: :any, methods: %i[get post put patch delete options head]
+    end
+  end
 end

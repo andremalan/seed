@@ -75,4 +75,11 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins 'http://localhost:5173'
+      resource '*', headers: :any, methods: %i[get post put patch delete options head]
+    end
+  end
 end

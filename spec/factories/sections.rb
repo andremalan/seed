@@ -4,5 +4,6 @@ FactoryBot.define do
   factory :section do
     label { 'Section Label' }
     description { 'Section Description' }
+    available { true }
   end
 end
