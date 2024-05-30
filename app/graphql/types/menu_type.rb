@@ -14,7 +14,7 @@ module Types
     end
 
     def sections
-      object.sections.order(:display_order)
+      object.menu_sections.order(:display_order).map(&:section)
     end
   end
 end
