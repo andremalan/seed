@@ -10,5 +10,9 @@ module Types
     def identifier
       object.id
     end
+
+    def items
+      object.section_items.order(:display_order).map(&:item)
+    end
   end
 end

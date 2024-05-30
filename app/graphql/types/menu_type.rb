@@ -12,5 +12,9 @@ module Types
     def identifier
       object.id
     end
+
+    def sections
+      object.sections.order(:display_order)
+    end
   end
 end
