@@ -51,7 +51,7 @@ gem 'graphql'
 gem 'rubocop', require: false
 
 gem 'rack-cors'
-
+gem 'stripe'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
@@ -79,6 +79,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  gem 'stripe-ruby-mock'
 end
 
 gem 'pg', '~> 1.5'

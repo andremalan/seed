@@ -30,5 +30,6 @@ module Types
 
     field :add_modifier_group_to_item, mutation: Mutations::ItemModifierGroupMutations::AddModifierGroupToItem
     field :remove_modifier_group_from_item, mutation: Mutations::ItemModifierGroupMutations::RemoveModifierGroupFromItem
+    field :create_checkout_session, mutation: Mutations::CreateCheckoutSessionMutation
   end
 end
